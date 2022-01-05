@@ -1,0 +1,13 @@
+Source: ros-galactic-octomap-server
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), libpcl-dev, ros-galactic-ament-cmake-auto, ros-galactic-ament-lint-auto, ros-galactic-ament-lint-common, ros-galactic-geometry-msgs, ros-galactic-message-filters, ros-galactic-nav-msgs, ros-galactic-octomap, ros-galactic-octomap-msgs, ros-galactic-octomap-ros, ros-galactic-pcl-conversions, ros-galactic-pcl-ros, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-sensor-msgs, ros-galactic-std-msgs, ros-galactic-std-srvs, ros-galactic-tf2, ros-galactic-tf2-eigen, ros-galactic-tf2-geometry-msgs, ros-galactic-tf2-ros, ros-galactic-visualization-msgs, ros-galactic-ros-workspace
+Homepage: http://www.ros.org/wiki/octomap_server
+Standards-Version: 3.9.2
+
+Package: ros-galactic-octomap-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcl-dev, ros-galactic-geometry-msgs, ros-galactic-message-filters, ros-galactic-nav-msgs, ros-galactic-octomap, ros-galactic-octomap-msgs, ros-galactic-octomap-ros, ros-galactic-pcl-conversions, ros-galactic-pcl-ros, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-sensor-msgs, ros-galactic-std-msgs, ros-galactic-std-srvs, ros-galactic-tf2, ros-galactic-tf2-eigen, ros-galactic-tf2-geometry-msgs, ros-galactic-tf2-ros, ros-galactic-visualization-msgs, ros-galactic-ros-workspace
+Description: octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format.
+ It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
