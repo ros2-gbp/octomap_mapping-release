@@ -1,0 +1,13 @@
+Source: ros-foxy-octomap-server
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), libpcl-dev, ros-foxy-ament-cmake-auto, ros-foxy-ament-lint-auto, ros-foxy-ament-lint-common, ros-foxy-geometry-msgs, ros-foxy-message-filters, ros-foxy-nav-msgs, ros-foxy-octomap, ros-foxy-octomap-msgs, ros-foxy-octomap-ros, ros-foxy-pcl-conversions, ros-foxy-pcl-ros, ros-foxy-rclcpp, ros-foxy-rclcpp-components, ros-foxy-sensor-msgs, ros-foxy-std-msgs, ros-foxy-std-srvs, ros-foxy-tf2, ros-foxy-tf2-eigen, ros-foxy-tf2-geometry-msgs, ros-foxy-tf2-ros, ros-foxy-visualization-msgs, ros-foxy-ros-workspace
+Homepage: http://www.ros.org/wiki/octomap_server
+Standards-Version: 3.9.2
+
+Package: ros-foxy-octomap-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcl-dev, ros-foxy-geometry-msgs, ros-foxy-message-filters, ros-foxy-nav-msgs, ros-foxy-octomap, ros-foxy-octomap-msgs, ros-foxy-octomap-ros, ros-foxy-pcl-conversions, ros-foxy-pcl-ros, ros-foxy-rclcpp, ros-foxy-rclcpp-components, ros-foxy-sensor-msgs, ros-foxy-std-msgs, ros-foxy-std-srvs, ros-foxy-tf2, ros-foxy-tf2-eigen, ros-foxy-tf2-geometry-msgs, ros-foxy-tf2-ros, ros-foxy-visualization-msgs, ros-foxy-ros-workspace
+Description: octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format.
+ It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
