@@ -1,0 +1,13 @@
+Source: ros-iron-octomap-server
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), libpcl-dev, ros-iron-ament-cmake-auto, ros-iron-ament-lint-auto <!nocheck>, ros-iron-ament-lint-common <!nocheck>, ros-iron-geometry-msgs, ros-iron-message-filters, ros-iron-nav-msgs, ros-iron-octomap, ros-iron-octomap-msgs, ros-iron-octomap-ros, ros-iron-pcl-conversions, ros-iron-pcl-ros, ros-iron-rclcpp, ros-iron-rclcpp-components, ros-iron-sensor-msgs, ros-iron-std-msgs, ros-iron-std-srvs, ros-iron-tf2, ros-iron-tf2-eigen, ros-iron-tf2-geometry-msgs, ros-iron-tf2-ros, ros-iron-visualization-msgs, ros-iron-ros-workspace
+Homepage: http://www.ros.org/wiki/octomap_server
+Standards-Version: 3.9.2
+
+Package: ros-iron-octomap-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcl-dev, ros-iron-geometry-msgs, ros-iron-message-filters, ros-iron-nav-msgs, ros-iron-octomap, ros-iron-octomap-msgs, ros-iron-octomap-ros, ros-iron-pcl-conversions, ros-iron-pcl-ros, ros-iron-rclcpp, ros-iron-rclcpp-components, ros-iron-sensor-msgs, ros-iron-std-msgs, ros-iron-std-srvs, ros-iron-tf2, ros-iron-tf2-eigen, ros-iron-tf2-geometry-msgs, ros-iron-tf2-ros, ros-iron-visualization-msgs, ros-iron-ros-workspace
+Description: octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format.
+ It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
