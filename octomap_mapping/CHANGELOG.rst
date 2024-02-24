@@ -2,6 +2,9 @@
 Changelog for package octomap_mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.0 (2024-02-24)
+------------------
+
 2.0.0 (2021-12-24)
 ------------------
 * ROS2 Migration (`#95 <https://github.com/octomap/octomap_mapping/issues/95>`_)
