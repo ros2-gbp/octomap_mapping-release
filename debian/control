@@ -1,0 +1,12 @@
+Source: ros-jazzy-octomap-mapping
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-ros-workspace
+Homepage: http://ros.org/wiki/octomap_mapping
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-octomap-mapping
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-octomap-server, ros-jazzy-ros-workspace
+Description: Mapping tools to be used with the OctoMap library, implementing a 3D occupancy grid mapping.
