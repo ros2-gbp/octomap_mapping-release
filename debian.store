@@ -1,1 +1,1 @@
-{"base": "83a9770", "parent": "debian/rolling/octomap_server", "previous": "b587af8", "trim": "", "trimbase": ""}
+{"base": "d5e039a", "parent": "debian/jazzy/octomap_server", "previous": "e6c87e6", "trim": "", "trimbase": ""}
