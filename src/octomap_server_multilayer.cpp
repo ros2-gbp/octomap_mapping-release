@@ -32,6 +32,8 @@
 
 #include "octomap_server/octomap_server_multilayer.hpp"
 
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
+
 namespace octomap_server
 {
 OctomapServerMultilayer::OctomapServerMultilayer(const rclcpp::NodeOptions & node_options)
