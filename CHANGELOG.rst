@@ -2,6 +2,12 @@
 Changelog for package octomap_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.0 (2024-05-25)
+------------------
+* Fix: Include missing tf2 geometry_msgs (`#128 <https://github.com/octomap/octomap_mapping/issues/128>`_)
+* Fix: Deprecated PCL APIs (`#126 <https://github.com/octomap/octomap_mapping/issues/126>`_)
+* Contributors: Wolfgang Merkt, Daisuke Nishimatsu
+
 2.1.0 (2024-02-24)
 ------------------
 * Fix header include order error (`#125 <https://github.com/octomap/octomap_mapping/issues/125>`_)
