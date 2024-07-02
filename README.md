@@ -1,3 +1,28 @@
+## octomap_mapping (rolling) - 2.3.0-1
+
+The packages in the `octomap_mapping` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -r rolling --non-interactive octomap_mapping` on `Tue, 02 Jul 2024 16:36:10 -0000`
+
+These packages were released:
+- `octomap_mapping`
+- `octomap_server`
+
+Version of package(s) in repository `octomap_mapping`:
+
+- upstream repository: https://github.com/OctoMap/octomap_mapping.git
+- release repository: https://github.com/ros2-gbp/octomap_mapping-release.git
+- rosdistro version: `2.2.0-1`
+- old version: `2.2.0-1`
+- new version: `2.3.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.24.0`
+- rosdistro version: `0.9.1`
+- vcstools version: `0.1.42`
+
+
 ## octomap_mapping (jazzy) - 2.2.0-1
 
 The packages in the `octomap_mapping` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release -r jazzy octomap_mapping --non-interactive` on `Sat, 25 May 2024 14:50:38 -0000`
