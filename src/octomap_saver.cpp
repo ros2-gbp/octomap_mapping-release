@@ -26,15 +26,15 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include <rclcpp/rclcpp.hpp>
-#include <octomap_msgs/conversions.h>
 #include <octomap/octomap.h>
-
-#include <octomap_msgs/srv/get_octomap.hpp>
 
 #include <chrono>
 #include <memory>
 #include <string>
+
+#include "rclcpp/rclcpp.hpp"
+#include "octomap_msgs/conversions.h"
+#include "octomap_msgs/srv/get_octomap.hpp"
 
 namespace octomap_server
 {
@@ -56,6 +56,11 @@ OctomapSaver::OctomapSaver(
 
   const bool full = declare_parameter("full", false);
   const auto map_name = declare_parameter("octomap_path", "");
+  if (map_name.length() < 4) {
+    RCLCPP_ERROR_STREAM(get_logger(), "Invalid file name or extension: " << map_name);
+    rclcpp::shutdown();
+    return;
+  }
   const auto srv_name = full ? "octomap_full" : "octomap_binary";
   auto client = create_client<GetOctomap>(srv_name);
 
