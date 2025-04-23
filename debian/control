@@ -1,0 +1,13 @@
+Source: ros-kilted-octomap-server
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), liboctomap-dev, libpcl-dev, ros-kilted-ament-cmake-auto, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-geometry-msgs, ros-kilted-message-filters, ros-kilted-nav-msgs, ros-kilted-octomap-msgs, ros-kilted-octomap-ros, ros-kilted-pcl-conversions, ros-kilted-pcl-ros, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-sensor-msgs, ros-kilted-std-msgs, ros-kilted-std-srvs, ros-kilted-tf2, ros-kilted-tf2-eigen, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Homepage: http://www.ros.org/wiki/octomap_server
+Standards-Version: 3.9.2
+
+Package: ros-kilted-octomap-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liboctomap-dev, libpcl-dev, ros-kilted-geometry-msgs, ros-kilted-message-filters, ros-kilted-nav-msgs, ros-kilted-octomap-msgs, ros-kilted-octomap-ros, ros-kilted-pcl-conversions, ros-kilted-pcl-ros, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-sensor-msgs, ros-kilted-std-msgs, ros-kilted-std-srvs, ros-kilted-tf2, ros-kilted-tf2-eigen, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Description: octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format.
+ It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
