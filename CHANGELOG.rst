@@ -2,6 +2,11 @@
 Changelog for package octomap_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.3.1 (2026-01-22)
+------------------
+* chore: update headers for message filters and tf2 ros (`#138 <https://github.com/OctoMap/octomap_mapping/issues/138>`_)
+* Contributors: Daisuke Nishimatsu
+
 2.3.0 (2024-07-02)
 ------------------
 * Switch to the system-provided octomap library. (`#134 <https://github.com/octomap/octomap_mapping/issues/134>`_)
