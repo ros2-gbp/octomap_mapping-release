@@ -1,0 +1,13 @@
+Source: ros-lyrical-octomap-server
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <opensource@wolfgangmerkt.com>
+Build-Depends: debhelper (>= 9.0.0), liboctomap-dev, libpcl-dev, ros-lyrical-ament-cmake-auto, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-geometry-msgs, ros-lyrical-message-filters, ros-lyrical-nav-msgs, ros-lyrical-octomap-msgs, ros-lyrical-octomap-ros, ros-lyrical-pcl-conversions, ros-lyrical-pcl-ros, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-sensor-msgs, ros-lyrical-std-msgs, ros-lyrical-std-srvs, ros-lyrical-tf2, ros-lyrical-tf2-eigen, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Homepage: http://www.ros.org/wiki/octomap_server
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-octomap-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liboctomap-dev, libpcl-dev, ros-lyrical-geometry-msgs, ros-lyrical-message-filters, ros-lyrical-nav-msgs, ros-lyrical-octomap-msgs, ros-lyrical-octomap-ros, ros-lyrical-pcl-conversions, ros-lyrical-pcl-ros, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-sensor-msgs, ros-lyrical-std-msgs, ros-lyrical-std-srvs, ros-lyrical-tf2, ros-lyrical-tf2-eigen, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Description: octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format.
+ It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
